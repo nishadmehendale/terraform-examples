@@ -1,6 +1,6 @@
 module "kafka" {
     source  = "./module"
-    topics  = toset(var.topics)
-    segment = var.segment
-    cleanup = var.cleanup
+    topic_name  = toset(var.topics)
+    segment_ms = var.segment
+    cleanup_policy = var.cleanup
 }

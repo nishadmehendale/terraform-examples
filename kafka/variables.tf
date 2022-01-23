@@ -1,14 +1,13 @@
 variable "segment" {
     default = {
-        "one"  = "OneSegment"
-        "two"  = "TwoSegments"
+        "one"  = "30000"
     }
 }
 
 variable "cleanup" {
     default = {
-        "one"  = "OneCleanup"
-        "two"  = "TwoCleanup"
+        "one"  = "delete"
+        "two"  = "compact, delete"
     }
 }
 
